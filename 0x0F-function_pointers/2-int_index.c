@@ -8,6 +8,7 @@
 * Return: The index of the first element for witch the cmp function
 * does not return 0; -1 if no elements matches or size <= 0.
 */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i = 0;
@@ -20,7 +21,7 @@ return (-1);
 
 for (; i < size; i++)
 if (cmp(array[i])
-return (-1);
+return (i);
 
 if (i == size)
 return (-1);
